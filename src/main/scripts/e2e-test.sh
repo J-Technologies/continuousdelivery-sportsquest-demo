@@ -7,12 +7,11 @@ echo "Updating WebDriver"
 echo $BASE_DIR
 echo "-------------------------------------------------------------------"
 
-$BASE_DIR/../node_modules/protractor/bin/webdriver-manager update
-
+webdriver-manager update
 
 echo ""
 echo "Starting Protractor tests"
 echo $BASE_DIR
 echo "-------------------------------------------------------------------"
 
-$BASE_DIR/../node_modules/protractor/bin/protractor $BASE_DIR/../config/protractor-conf.js $*
+protractor $BASE_DIR/../config/protractor-conf.js $*

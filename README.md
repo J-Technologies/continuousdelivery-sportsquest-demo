@@ -6,8 +6,18 @@ SportsQuest is a webapp for demo purposes.
 
 Required installations
 -------------
-- Java jdk 8 http://www.oracle.com/technetwork/java/javase/downloads/index.html
-- Apache Tomcat version 8 https://tomcat.apache.org/
+- Java jdk 8 <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
+- Apache Tomcat version 8 <https://tomcat.apache.org>
+
+For Testing
+1. Download and install Nodejs (https://nodejs.org)
+2. Install Protractor via commandline:
+
+         npm install -g protractor
+
+Start Selenium testserver via commandline: 
+
+         webdriver-manager start 
 
 Build
 --------------

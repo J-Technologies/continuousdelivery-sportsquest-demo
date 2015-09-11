@@ -2,7 +2,7 @@
 
 angular.module('sportsQuest').controller('CarouselDemoCtrl',
     function CarouselDemoCtrl($scope) {
-        $scope.myInterval = 15000;
+        $scope.myInterval = 10000;
         var slides = $scope.slides = [];
         $scope.addSlide = function() {
 	        var newWidth = 1 + slides.length;
@@ -12,7 +12,7 @@ angular.module('sportsQuest').controller('CarouselDemoCtrl',
 	            ['Sports', 'Sports', 'Sports', 'Sports'][slides.length % 4]
 	        });
         };
-        for (var i=0; i<4; i++) {
+        for (var i=0; i<5; i++) {
             $scope.addSlide();
         }
    }

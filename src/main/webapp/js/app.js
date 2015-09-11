@@ -6,8 +6,8 @@ sportsQuest.config(function ($routeProvider, $locationProvider) {
 
     $routeProvider.when('/login',
         {
-            templateUrl:    'login.html',
-            controller:     'LoginController'
+            templateUrl:    'login.html'
+            //controller:     'LoginController'
         });
     $routeProvider.otherwise(
         {
