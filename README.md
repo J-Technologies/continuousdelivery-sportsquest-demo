@@ -28,5 +28,5 @@ With the commands below you can build the SportsQuest webapp from source. Gradle
 
 Run on application server
 ------------------------
-- Deploy war to Tomcat: build/libs/sportsquest-web-x.x.x.war
-- Open in a browser <http://localhost:8080/sportsquest-web>
+- Deploy war to Tomcat: build/libs/sportsquest.war
+- Open in a browser <http://localhost:8080/sportsquest>
