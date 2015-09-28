@@ -13,7 +13,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 war {
-        baseName = 'sportsquest-web'
+        archiveName = 'sportsquest'
 }
 
 ext.springVersion = '4.0.2.RELEASE'

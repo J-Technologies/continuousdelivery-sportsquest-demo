@@ -11,11 +11,12 @@ exports.config = {
     'browserName': 'chrome'
   },
 
-  baseUrl: 'http://sportsquest:8080',
+  baseUrl: 'http://localhost:8080',
 
   framework: 'jasmine',
 
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
-  }
+  },
+  
 };

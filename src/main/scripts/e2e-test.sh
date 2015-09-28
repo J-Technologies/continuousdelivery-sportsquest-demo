@@ -14,4 +14,4 @@ echo "Starting Protractor tests"
 echo $BASE_DIR
 echo "-------------------------------------------------------------------"
 
-protractor $BASE_DIR/../test/config/protractor.conf.js $*
+protractor $BASE_DIR/../test/e2e/local-protractor.conf.js $*
