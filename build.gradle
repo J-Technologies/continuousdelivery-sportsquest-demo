@@ -7,7 +7,7 @@ apply plugin: 'sonar-runner'
 
 group = 'org.sportsquest'
 version = '1.0.0'
-description = "sportsquest"
+description = 'sportsquest'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -64,6 +64,11 @@ dependencies {
         providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 }
 
-task setProjectVersion() << {
-    file('version.txt').text = "${project.version}-b" + System.properties['BUILD_NUMBER']
+task setProjectVersionWithBuildNumber() << {
+    file('version.txt').text = "${project.version}-b" + "$BUILD_NUMBER"
+}
+
+task setTagWithVersion(type: Exec) {
+    def tagName = 'sportsquest-' + file('version.txt').text
+    commandLine 'git', 'tag', '-a', '-f', "-m'Jenkins Release Build'", "$tagName" 
 }
