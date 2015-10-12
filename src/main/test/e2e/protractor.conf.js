@@ -5,13 +5,13 @@ exports.config = {
     '*.js'
   ],
   
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumAddress: 'http://hub:4444/wd/hub',
 
   capabilities: {
     'browserName': 'chrome'
   },
 
-  baseUrl: 'http://sportsquest:8080',
+  baseUrl: 'http://web:8080',
 
   framework: 'jasmine',
 
