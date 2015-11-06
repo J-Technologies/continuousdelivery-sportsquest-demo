@@ -3,7 +3,7 @@
 angular.module('sportsQuest').controller('CarouselDemoCtrl',
 		
     function CarouselDemoCtrl($scope) {
-        $scope.myInterval = 1500;
+        $scope.myInterval = 3000;
         var slides = $scope.slides = [];
         $scope.addSlide = function() {
 	        var newWidth = 1 + slides.length;
