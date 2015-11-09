@@ -1,4 +1,5 @@
 FROM tomcat:8-jre8
+
 MAINTAINER Sebastiaan Renkens sebastiaan.renkens@ordina.nl
 
 # Upstream tomcat is expected to EXPOSE port 8080
