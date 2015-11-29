@@ -76,6 +76,6 @@ task setProjectVersionWithBuildNumber() << {
 }
 
 task setTagWithVersion(type: Exec) {
-    def tagName = 'sportsquest-' + file('version.txt').text
+    def tagName = 'sportsquest-' + versionFile.text
     commandLine 'git', 'tag', '-a', '-f', "-m'Jenkins Release Build'", "$tagName" 
 }
