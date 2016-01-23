@@ -13,12 +13,11 @@ Build
 --------------
 With the commands below you can build the SportsQuest webapp from source. Gradle will be downloaded and installed automatically.
 
-	cd demo-apps/sportsquest
 	./gradlew build      (or in case of Windows:  gradlew build)
 
 Run on application server
 -------------------------
-- Deploy war to Tomcat: build/libs/sportsquest.war
+- Deploy build/libs/sportsquest.war to your Tomcat sever
 - Open in a browser <http://localhost:8080/sportsquest>
 
 For end-to-end testing
